@@ -25,11 +25,18 @@ let package = Package(
       targets: ["BidMachineAdapterTarget", "BidMachineSDK"]
     )
   ],
+  dependencies: [
+    .package(
+      url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+      from: "12.0.0"
+    )
+  ],
   targets: [
     .target(
       name: "BidMachineAdapterTarget",
       dependencies: [
-        .target(name: "BidMachineAdapter")
+        .target(name: "BidMachineAdapter"),
+        .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "BidMachineAdapterTarget"
     ),
