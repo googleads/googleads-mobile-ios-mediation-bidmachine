@@ -18,17 +18,21 @@ import PackageDescription
 
 let package = Package(
   name: "BidMachineAdapter",
-  platforms: [.iOS(.v12)],
+  platforms: [.iOS(.v13)],
   products: [
     .library(
       name: "BidMachineAdapterTarget",
-      targets: ["BidMachineAdapterTarget", "BidMachineSDK"]
+      targets: ["BidMachineAdapterTarget"]
     )
   ],
   dependencies: [
     .package(
+      url: "https://github.com/bidmachine/BidMachine-SPM.git",
+      exact: "3.6.0"
+    ),
+    .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      from: "12.0.0"
+      from: "13.0.0"
     )
   ],
   targets: [
@@ -36,6 +40,7 @@ let package = Package(
       name: "BidMachineAdapterTarget",
       dependencies: [
         .target(name: "BidMachineAdapter"),
+        .product(name: "BidMachine", package: "BidMachine-SPM"),
         .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "BidMachineAdapterTarget"
@@ -43,14 +48,8 @@ let package = Package(
     .binaryTarget(
       name: "BidMachineAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/bidmachine/BidMachineAdapter-3.5.0.0.zip",
-      checksum: "8eda8e7c127ffd4d711a8c081aa3327527de8bdc71e910ec62a0c04682d0edde"
-    ),
-    .binaryTarget(
-      name: "BidMachineSDK",
-      url:
-        "https://bidmachine-ios.s3.amazonaws.com/BidMachine/3.5.0/pod/BidMachine.zip",
-      checksum: "eb95538f1a883f519b464af3d068f9071e6e3f46568b921ebb1d2f87478b1977"
-    ),
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/bidmachine/BidMachineAdapter-3.6.0.0.zip",
+      checksum: "56b2f0c6e4f54bb39acc016e83a889adddca6e7674bd55c6877797c37879de86"
+    )
   ]
 )
