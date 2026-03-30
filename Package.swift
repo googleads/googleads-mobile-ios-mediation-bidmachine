@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/bidmachine/BidMachine-SPM.git",
-      exact: "3.6.0"
+      exact: "3.6.1"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "BidMachineAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/bidmachine/BidMachineAdapter-3.6.0.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/bidmachine/BidMachineAdapter-3.6.1.0.zip",
       checksum: "56b2f0c6e4f54bb39acc016e83a889adddca6e7674bd55c6877797c37879de86"
     )
   ]
