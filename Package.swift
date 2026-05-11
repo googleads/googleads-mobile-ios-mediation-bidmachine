@@ -32,8 +32,8 @@ let package = Package(
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      from: "13.0.0"
-    )
+      from: "13.3.0"
+    ),
   ],
   targets: [
     .target(
@@ -50,6 +50,6 @@ let package = Package(
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/bidmachine/BidMachineAdapter-3.6.1.0.zip",
       checksum: "08fb5a40d188eaa7ddaf7e5353325cbae0f4fddf4d13c87faf5c0d9bf7cad3bf"
-    )
+    ),
   ]
 )
