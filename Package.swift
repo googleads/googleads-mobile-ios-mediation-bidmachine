@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "BidMachineAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/bidmachine/BidMachineAdapter-3.6.1.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/bidmachine/BidMachineAdapter-3.6.1.1.zip",
       checksum: "08fb5a40d188eaa7ddaf7e5353325cbae0f4fddf4d13c87faf5c0d9bf7cad3bf"
     ),
   ]
