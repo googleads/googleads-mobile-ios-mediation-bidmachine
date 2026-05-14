@@ -49,7 +49,7 @@ let package = Package(
       name: "BidMachineAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/bidmachine/BidMachineAdapter-3.6.1.1.zip",
-      checksum: "08fb5a40d188eaa7ddaf7e5353325cbae0f4fddf4d13c87faf5c0d9bf7cad3bf"
+      checksum: "c6a545b4c8acb1b15f2d239d56c7696a883195f9453bca76bb626182f213b28e"
     ),
   ]
 )
